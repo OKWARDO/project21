@@ -1,0 +1,6 @@
+C:\Users\CCSDuser\Desktop\PRG_249\Week01\highwater\highwater\bin\TypeScriptHTMLApp1.dll.config
+C:\Users\CCSDuser\Desktop\PRG_249\Week01\highwater\highwater\bin\TypeScriptHTMLApp1.dll
+C:\Users\CCSDuser\Desktop\PRG_249\Week01\highwater\highwater\bin\TypeScriptHTMLApp1.pdb
+C:\Users\CCSDuser\Desktop\PRG_249\Week01\highwater\highwater\obj\Debug\highwater.csprojResolveAssemblyReference.cache
+C:\Users\CCSDuser\Desktop\PRG_249\Week01\highwater\highwater\obj\Debug\TypeScriptHTMLApp1.dll
+C:\Users\CCSDuser\Desktop\PRG_249\Week01\highwater\highwater\obj\Debug\TypeScriptHTMLApp1.pdb

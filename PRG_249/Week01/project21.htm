@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8" />
+   <title></title>
+  <link rel="stylesheet" type="text/css" href="style21.css">
+
+
+   
+</head>
+<body>
+<h1><u>Project 2.1</u><h1>
+
+Create a Web page with fi ve text boxes. Assign to each text box’s
+value attribute a value of zero. Add to each of the text boxes an
+onchange event handler that calls a function named calcAvg() and
+passes to the function the value of that text box by referencing its
+document object, form name, and name and value attributes. Within
+the calcAvg() function, pass the fi ve parameters to another function,
+named performCalc(), and assign the return value to a variable
+named calcResult, then place the returned value to another text
+box with a name attribute of averageResult. In the performCalc()
+function, calculate the average of the fi ve numbers (by adding the fi ve
+values and dividing by fi ve), then return the result to the calcAvg()
+function. When you perform the calculation, use the parseInt()
+function to ensure that the passed values are calculated as numbers.
+Save the document as CalcAverage.html.
+132
+CHAPTER 2 Working with Functions, Data Types, and Operators</p>
+<script type="text/javascript">
+/* <![CDATA[ */
+    function performcalc(in1, in2, in3, in4, in5)
+{
+	var result = (in1 +in2 + in3 + in4 + in5) / 5;
+	return result;
+}
+
+function calcAvg()
+{
+	var i1 = getElementById("i1");
+	var i2 = getElementById("i2");
+	var i3 = getElementById("i3");
+	var i4 = getElementById("i4");
+	var i5 = getElementById("i5");
+
+	var v1 = parseInt( i1.value );
+	var v2 = parseInt( i2.value );
+	var v3 = parseInt( i3.value );
+	var v4 = parseInt( i4.value );
+	var v5 = parseInt( i5.value );
+
+
+
+	var calcResult = performcalc( v1, v2, v3, v4, v5 );
+	document.getElementById( "averageResult" ).value = calcResult.tostring();
+}
+/* ]]> */
+</script>
+
+<form id="f1">
+    <table>
+         <tr>
+             <td><input type="number" name="i1" id ="id1" value="0" onchange="calcAvg()"/></td>
+             <td><input type="number" name="i2" id ="id2" value="0" onchange="calcAvg()"/></td>
+             <td><input type="number" name="i3" id ="id3" value="0" onchange="calcAvg()"/></td>
+             <td><input type="number" name="i4" id ="id4" value="0" onchange="calcAvg()"/></td>
+             <td><input type="number" name="i5" id ="id5" value="0" onchange="calcAvg()"/></td>
+        </tr>   
+    </table>
+    
+    Average =<input type="number" name="averageResult" id="averageResult">
+    </form>
+
+
+</body>
+</html>
